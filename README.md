@@ -11,7 +11,7 @@ FREME will empower digital content managers with its advantages and benefits it 
 
 ## How to run
 
-
+- Solr :  docker run -d -p 8983:8983 fremeproject/freme-ner-solr
 
 
 ## Supported Docker versions
