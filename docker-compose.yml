@@ -1,0 +1,11 @@
+ner:
+  build: ./freme-ner
+solr:
+  build: ./freme-ner-solr
+db:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: freme
+    MYSQL_USER: freme
+    MYSQL_PASSWORD: freme
+    MYSQL_DATABASE: freme
