@@ -1,6 +1,6 @@
 ner:
   build: ./freme-ner
-  command: java -Xms5g -Xmx5g -jar /opt/freme-ner/freme-ner-dev-0.8-full.jar
+  command: /opt/freme-ner/bin/freme-ner.sh
   ports:
     - "7002:7002"   
   links:
@@ -9,7 +9,9 @@ ner:
 solr:
   build: ./freme-ner-solr
   ports:
-    - "8983:8983"   
+    - "8983:8983" 
+  links:
+   - db    
 db:
   image: mysql
   ports:

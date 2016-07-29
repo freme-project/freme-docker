@@ -12,6 +12,6 @@ ADD bin/*  /opt/freme-ner/bin/
 
 
 RUN cd /opt/freme-ner/ && \
-    wget --quiet ${URL}${FREME_NER}?dl=1 -O ${FREME_NER} && \
+    wget ${URL}${FREME_NER}?dl=1 -O ${FREME_NER} && \
     cd /opt/freme-ner/models && \
-    wget --quiet ${FREME_MODELS}${FREME_EN}    
+    wget  ${FREME_MODELS}${FREME_EN}    
