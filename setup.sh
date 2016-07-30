@@ -5,7 +5,6 @@ readonly REPO_GIT=https://github.com/sandroacoelho/freme-docker.git
 echo "---------------------------------------------------------------------------"
 echo "Welcome to FREME NER setup"
 echo "---------------------------------------------------------------------------"
-sudo su
 
 # Debian Jessie Config
 echo "deb http://http.debian.net/debian wheezy-backports main" >  /etc/apt/sources.list.d/backports.list
