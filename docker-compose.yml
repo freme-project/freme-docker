@@ -6,12 +6,26 @@ ner:
   links:
    - db  
    - solr
+   - virtuoso
 solr:
   build: ./freme-ner-solr
   ports:
     - "8983:8983" 
   links:
    - db    
+  volumes:
+    - /mnt/data/solr:/data   
+virtuoso:
+  image: tenforce/virtuoso
+  ports:
+    - "8890:8890" 
+    - "1111:1111" 
+  volumes:
+    - /mnt/data/virtuoso:/data
+  environment:
+    DBA_PASSWORD: freme
+    SPARQL_UPDATE: "true"
+    DEFAULT_GRAPH: "http://www.freme-project.eu/graph"
 db:
   image: mysql
   ports:
