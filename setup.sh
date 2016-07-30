@@ -6,7 +6,7 @@ echo "--------------------------------------------------------------------------
 echo "Welcome to FREME NER setup"
 echo "---------------------------------------------------------------------------"
 
-# Common config
+# Common config (curl, wget , csvtool, gawk, git and bzip2)
 apt-get update
 apt-get upgrade
 apt-get install -y wget curl csvtool gawk git bzip2
@@ -15,13 +15,15 @@ apt-get install -y wget curl csvtool gawk git bzip2
 echo "deb http://http.debian.net/debian wheezy-backports main" >  /etc/apt/sources.list.d/backports.list
 echo "deb https://apt.dockerproject.org/repo debian-jessie main" >  /etc/apt/sources.list.d/docker.list
 
-# Common config (Docker, curl, wget , csvtool, gawk, git and bzip2)
+# Docker 
 apt-get update
 apt-get install -y apt-transport-https ca-certificates
+apt-get update
 apt-get purge "lxc-docker*"
 apt-get purge "docker.io*"
 apt-cache policy docker-engine
 apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+apt-get update
 apt-get install -y docker-engine
 
 #Docker compose
