@@ -124,7 +124,7 @@
    <field name="dataset" type="string" indexed="true" required="true" stored="true"/>
    <field name="resource" type="string" indexed="true" required="true" stored="true"/>
    <field name="language" type="string" indexed="true" required="true" stored="true"/>
-   <field name="label" type="text_general" indexed="true" stored="true"/>
+   <field name="label" type="string" indexed="true" stored="true"/>
    <field name="label_stemmed" type="text_general_stemmed" indexed="true" stored="false" multiValued="false"/>
    <copyField source="label" dest="label_stemmed"/>
    <field name="count" type="int" indexed="true" stored="true" multiValued="false"/>

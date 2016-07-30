@@ -14,7 +14,7 @@ solr:
   links:
    - db    
   volumes:
-    - /mnt/data/solr:/data   
+    - /mnt/data/solr/elinker:/opt/solr/server/solr/elinker
 virtuoso:
   image: tenforce/virtuoso
   ports:
