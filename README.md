@@ -13,14 +13,14 @@ In order to install FREME, follow the next steps
 
 - [Install docker](https://docs.docker.com/engine/installation/) and [docker compose](https://docs.docker.com/compose/).
 - Clone this repository
-- [Adjust security issues](SECURITY)
+- [Adjust security issues](SECURITY.md)
 - and finally, run docker-compose up under freme-docker folder
 
 
 If you are running Debian Jessie,
 
 - run wget https://raw.githubusercontent.com/sandroacoelho/freme-docker/master/setup.sh
-- [Adjust security issues](SECURITY)
+- [Adjust security issues](SECURITY.md)
 - and finally, run docker-compose up
 
 
