@@ -39,6 +39,10 @@ If you are running **Debian Jessie**,
 - Create a [partition data](PARTITION_DATA.md);
 - run docker-compose build under /opt/freme-docker folder;
 
+### How to start?
+
+After following install steps, you are read to use FREME-NER. Just run ```docker-compose up`` under freme-docker folder.
+
 ## Supported Docker versions
 This image is officially supported on Docker version 1.9.1.
 
