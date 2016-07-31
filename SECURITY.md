@@ -1,5 +1,7 @@
 
 
+In order to keep the server safety, we recommend to change
+
 
 - Create a strong password for MySQL and change [in Docker Composer file](https://github.com/sandroacoelho/freme-docker/blob/master/docker-compose.yml#L34) and [in application properties](https://github.com/sandroacoelho/freme-docker/blob/master/freme-ner/config/application.properties#L17);
 - Create a strong password for Virtuoso and change it [here](https://github.com/sandroacoelho/freme-docker/blob/master/docker-compose.yml#L26);
