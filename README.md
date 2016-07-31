@@ -7,11 +7,21 @@ FREME-Project IS A OPEN FRAMEWORK OF E-SERVICES FOR MULTILINGUAL AND SEMANTIC EN
 
 FREME will empower digital content managers with its advantages and benefits it brings to the market. FREME addresses the general systemic and technological challenges to validate that multilingual and semantic technologies are ready for their integration in real life business cases in innovative way. These technologies are capable to process (harvest and analyse) content, capture datasets, and add value throughout content and data value chains across sectors, countries, and languages.
 
-
-
 ## How to run
 
-- Solr :  docker run -d -p 8983:8983 fremeproject/freme-ner-solr
+In order to install FREME, follow the next steps
+
+- [Install docker](https://docs.docker.com/engine/installation/) and [docker compose](https://docs.docker.com/compose/).
+- Clone this repository
+- [Adjust security issues](SECURITY)
+- and finally, run docker-compose up under freme-docker folder
+
+
+If you are running Debian Jessie,
+
+- run wget https://raw.githubusercontent.com/sandroacoelho/freme-docker/master/setup.sh
+- [Adjust security issues](SECURITY)
+- and finally, run docker-compose up
 
 
 ## Supported Docker versions
@@ -21,14 +31,8 @@ Please see the [Docker installation documentation] (https://docs.docker.com/inst
 
 ## Documentation
 
-Documentation for this image is stored in [GitHub repo](http://github.com/dbpedia-spotlight/dbpedia-spotlight/wiki).
+Documentation for this image is stored in [GitHub repo](http://api-dev.freme-project.eu/doc/tutorials/overview.html).
 
 ## Issues
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](http://github.com/dbpedia-spotlight/dbpedia-spotlight/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/sandroacoelho/freme-docker/issues).
 
-
-## Contributing
-
-First of all, thank you for helping! :) .
-
-Please see [DBpedia Spotlight Contribute Guide](https://github.com/dbpedia-spotlight/dbpedia-spotlight/wiki/Contributing) for details on how to contribute
