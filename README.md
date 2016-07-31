@@ -6,20 +6,21 @@ FREME will empower digital content managers with its advantages and benefits it 
 
 ## How to run
 
-In order to install FREME-NER, follow the next steps
+In order to install FREME-NER in your own server, please follow the next steps
 
-- [Install docker](https://docs.docker.com/engine/installation/) and [docker compose](https://docs.docker.com/compose/).
-- Clone this repository
-- [Adjust security issues](SECURITY.md)
-- and finally, run docker-compose up under freme-docker folder
-
+- [Install docker](https://docs.docker.com/engine/installation/) and [docker compose](https://docs.docker.com/compose/);
+- Clone this repository ;
+- [Adjust security issues](SECURITY.md);
+- [Create a partition data](PARTITION_DATA.MD];
+- run docker-compose build under freme-docker folder ;
 
 If you are running Debian Jessie,
 
 - run wget https://raw.githubusercontent.com/sandroacoelho/freme-docker/master/setup.sh
-- [Adjust security issues](SECURITY.md)
-- and finally, run docker-compose up
-
+- run ```chmod a+x setup.sh``` and ```./setup.sh```
+- [Adjust security issues](SECURITY.md);
+- [Create a partition data](PARTITION_DATA.MD];
+- run docker-compose build under /opt/freme-docker folder;
 
 ## Supported Docker versions
 This image is officially supported on Docker version 1.9.1.
