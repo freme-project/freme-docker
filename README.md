@@ -53,5 +53,5 @@ If you have any problems with or questions about this image, please contact us t
 
 
 ## Maintainers
- ![InfAI](http://infai.org/de/Aktuelles/files?get=10_jahre_infai_gold.PNG) 
+ ![InfAI](http://infai.org/de/Aktuelles/files?get=10_jahre_infai_gold.PNG {width=212 height=78}) 
 
