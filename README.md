@@ -14,10 +14,16 @@ Get more at [www.freme-project.eu](http://www.freme-project.eu)
 
 ### Requirements
 
+- Unix (We would recomend Debian);
+- Docker;
+- At least 24GB of RAM;
+- At least 200GB of disk space;
 
 ### Install steps
 
 In order to install FREME-NER in your own server, please follow the next steps
+
+If you are running a non Debian distribution,
 
 - [Install docker](https://docs.docker.com/engine/installation/) and [docker compose](https://docs.docker.com/compose/);
 - Clone this repository ;
@@ -25,7 +31,7 @@ In order to install FREME-NER in your own server, please follow the next steps
 - Create a [partition data](PARTITION_DATA.md);
 - run docker-compose build under freme-docker folder ;
 
-If you are running Debian Jessie,
+If you are running Debian **Jessie**,
 
 - run wget https://raw.githubusercontent.com/sandroacoelho/freme-docker/master/setup.sh
 - run ```chmod a+x setup.sh``` and ```./setup.sh```
@@ -40,7 +46,7 @@ Please see the [Docker installation documentation] (https://docs.docker.com/inst
 
 ## Documentation
 
-Documentation for this image is stored in [GitHub repo](http://api-dev.freme-project.eu/doc/tutorials/overview.html).
+Documentation for this image is stored at [FREME website](http://api-dev.freme-project.eu/doc/tutorials/overview.html).
 
 ## Issues
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/sandroacoelho/freme-docker/issues).
