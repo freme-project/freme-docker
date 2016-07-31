@@ -31,7 +31,7 @@ If you are running a non Debian distribution,
 - Create a [partition data](PARTITION_DATA.md);
 - run docker-compose build under freme-docker folder ;
 
-If you are running Debian **Jessie**,
+If you are running **Debian Jessie**,
 
 - run wget https://raw.githubusercontent.com/sandroacoelho/freme-docker/master/setup.sh
 - run ```chmod a+x setup.sh``` and ```./setup.sh```
