@@ -41,7 +41,7 @@ If you are running **Debian Jessie**,
 
 ### How to start?
 
-After following install steps, you are read to use FREME-NER. Just run ``docker-compose up`` under freme-docker folder.
+After following install steps, you are ready to use FREME-NER. Just run ``docker-compose up`` under freme-docker folder.
 
 ## Supported Docker versions
 This image is officially supported on Docker version 1.9.1.
