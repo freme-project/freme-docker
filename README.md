@@ -11,7 +11,7 @@ In order to install FREME-NER in your own server, please follow the next steps
 - [Install docker](https://docs.docker.com/engine/installation/) and [docker compose](https://docs.docker.com/compose/);
 - Clone this repository ;
 - [Adjust security issues](SECURITY.md);
-- [Create a partition data](PARTITION_DATA.md];
+- Create a [partition data](PARTITION_DATA.md);
 - run docker-compose build under freme-docker folder ;
 
 If you are running Debian Jessie,
@@ -19,7 +19,7 @@ If you are running Debian Jessie,
 - run wget https://raw.githubusercontent.com/sandroacoelho/freme-docker/master/setup.sh
 - run ```chmod a+x setup.sh``` and ```./setup.sh```
 - [Adjust security issues](SECURITY.md);
-- [Create a partition data](PARTITION_DATA.md];
+- Create a [partition data](PARTITION_DATA.md);
 - run docker-compose build under /opt/freme-docker folder;
 
 ## Supported Docker versions
