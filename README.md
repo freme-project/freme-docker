@@ -1,10 +1,21 @@
+
+
 ## What is FREME-Project?
+
+![FREME logo](http://www.freme-project.eu/wp-content/uploads/2015/02/FREME_LogoHor_250px.png)
 
 FREME-Project IS A OPEN FRAMEWORK OF E-SERVICES FOR MULTILINGUAL AND SEMANTIC ENRICHMENT OF DIGITAL CONTENT
 
 FREME will empower digital content managers with its advantages and benefits it brings to the market. FREME addresses the general systemic and technological challenges to validate that multilingual and semantic technologies are ready for their integration in real life business cases in innovative way. These technologies are capable to process (harvest and analyse) content, capture datasets, and add value throughout content and data value chains across sectors, countries, and languages.
 
-## How to run
+Get more at [www.freme-project.eu](http://www.freme-project.eu)
+
+## How to install and run
+
+### Requirements
+
+
+### Install steps
 
 In order to install FREME-NER in your own server, please follow the next steps
 
@@ -33,4 +44,8 @@ Documentation for this image is stored in [GitHub repo](http://api-dev.freme-pro
 
 ## Issues
 If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/sandroacoelho/freme-docker/issues).
+
+
+## Maintainers
+ ![InfAI](http://infai.org/de/Aktuelles/files?get=10_jahre_infai_gold.PNG) 
 
