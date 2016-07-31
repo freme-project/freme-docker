@@ -6,6 +6,9 @@ In order to keep the server safety, we recommend to create a strong password for
 
 We recomend to run all services behind an Apache instance with [mod_evasive](http://www.faqforge.com/linux/prevent-dos-attacks-on-apache-webserver-for-debian-linux-with-mod_evasive/) installed. Our suggested configuration is:
 
+
+![Diagram](configuration_diagram.png)
+
         ProxyPass /solr http://0.0.0.0:8983/solr
         ProxyPassReverse /solr http://0.0.0.0:8983/solr
 
