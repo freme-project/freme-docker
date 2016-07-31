@@ -1,6 +1,3 @@
-## Supported tags and respective Dockerfile links
-*  latest 
-
 ## What is FREME-Project?
 
 FREME-Project IS A OPEN FRAMEWORK OF E-SERVICES FOR MULTILINGUAL AND SEMANTIC ENRICHMENT OF DIGITAL CONTENT
@@ -9,7 +6,7 @@ FREME will empower digital content managers with its advantages and benefits it 
 
 ## How to run
 
-In order to install FREME, follow the next steps
+In order to install FREME-NER, follow the next steps
 
 - [Install docker](https://docs.docker.com/engine/installation/) and [docker compose](https://docs.docker.com/compose/).
 - Clone this repository
