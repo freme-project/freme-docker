@@ -16,7 +16,7 @@ do
     csvtool -t COMMA -u TAB col 7,4,1,5 $fc > $fc".tsv"
  done
 
- echo "Normalizing datasets"
+ echo "Extracting datasets"
  for fe in dump/*.tsv;
  do
     gawk -F $'\t'  '{ print "<"$3"> <http://www.w3.org/2004/02/skos/core#prefLabel> \""$4"\"@"$2" ." >> "datasets/"$1".nt"}' $fe
@@ -27,7 +27,7 @@ do
 
 done
 
-echo "Extracting datasets"
+echo "Normalizing datasets"
 for fdt in datasets/*.nt;
 do
   cat $fdt | sed -e "s/\"\"/\"/g"  |  sed -e "s/\ //g"  > $fdt".ttl"
