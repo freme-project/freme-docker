@@ -30,7 +30,7 @@ done
 echo "Normalizing datasets"
 for fdt in datasets/*.nt;
 do
-  cat $fdt | sed -e "s/\"\"/\"/g"  |  sed -e "s/\ //g"  > $fdt".ttl"
+  cat $fdt | sed -e "s/\"\"/\"/g"  |  sed -e 's/\\//g'  > $fdt".ttl"
   rm $fdt
 done
 
