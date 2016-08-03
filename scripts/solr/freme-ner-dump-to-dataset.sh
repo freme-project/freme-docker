@@ -5,7 +5,11 @@ mkdir -p datasets
 
 for f in dump_original/*.csv;
 do
+  cat $f | sed -e "s/\"\"/\"/g"  |  sed -e 's/\\//g'  > $f".nml"
+done
 
+for f in dump_original/*.nml;
+do
  echo "Spliting file ${f}..."
 
  split -l100000  $f dump/
@@ -25,13 +29,6 @@ do
  rm -r -f dump
  mkdir -p dump
 
-done
-
-echo "Normalizing datasets"
-for fdt in datasets/*.nt;
-do
-  cat $fdt | sed -e "s/\"\"/\"/g"  |  sed -e 's/\\//g'  > $fdt".ttl"
-  rm $fdt
 done
 
 echo "Done..."
