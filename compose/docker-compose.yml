@@ -1,13 +1,26 @@
 version: '2'
 services:
+
   freme-broker:
     image: fremeprojecteu/freme-broker
     ports:
      - "4000:8080"
     depends_on:
      - freme-mysql
+     - freme-virtuoso
+     - freme-solr
+
   freme-mysql:
     image: fremeprojecteu/freme-mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root
 
+  freme-virtuoso:
+    image: tenforce/virtuoso
+    environment:
+      - DBA_PASSWORD=dba
+      - SPARQL_UPDATE=true
+      - DEFAULT_GRAPH=http://www.example.com/my-graph
+  
+  freme-solr:
+    image: fremeprojecteu/freme-solr
