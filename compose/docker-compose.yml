@@ -1,0 +1,13 @@
+version: '2'
+services:
+  freme-broker:
+    image: fremeprojecteu/freme-broker
+    ports:
+     - "4000:8080"
+    depends_on:
+     - freme-mysql
+  freme-mysql:
+    image: fremeprojecteu/freme-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+
