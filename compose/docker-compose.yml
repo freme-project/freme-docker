@@ -2,7 +2,7 @@ version: '2'
 services:
 
   freme-broker:
-    image: fremeprojecteu/freme-broker
+    image: fremeproject/freme-broker
     ports:
      - "4000:8080"
     depends_on:
@@ -11,7 +11,7 @@ services:
      - freme-solr
 
   freme-mysql:
-    image: fremeprojecteu/freme-mysql
+    image: fremeproject/freme-mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root
 
@@ -23,4 +23,4 @@ services:
       - DEFAULT_GRAPH=http://www.example.com/my-graph
   
   freme-solr:
-    image: fremeprojecteu/freme-solr
+    image: fremeproject/freme-solr

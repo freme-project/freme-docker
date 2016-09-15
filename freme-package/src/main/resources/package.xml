@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<import resource="classpath:spring-configurations/freme-common.xml" />
+	
+	<!-- basic services -->
+	<import resource="classpath:spring-configurations/sparql-converters.xml" />
+	<import resource="classpath:spring-configurations/users.xml" />
+	<import resource="classpath:spring-configurations/logging.xml" />
+	<import resource="classpath:spring-configurations/internationalization-filter.xml" />
+	<import resource="classpath:spring-configurations/pipelines.xml" />
+	<import resource="classpath:spring-configurations/postprocessing.xml" />
+	<import resource="classpath:spring-configurations/cors-filter.xml" />
+	<import resource="classpath:spring-configurations/nif-converter.xml" />
+	<import resource="classpath:spring-configurations/urlsupport-filter.xml"/>
+	<import resource="classpath:spring-configurations/xslt-converter.xml"/>
+	
+	
+	
+	<!-- e-services -->
+	<import resource="classpath:spring-configurations/tilde-translation.xml" />
+	<import resource="classpath:spring-configurations/tilde-terminology.xml" />
+	<import resource="classpath:spring-configurations/e-link.xml" />
+	<import resource="classpath:spring-configurations/e-publishing.xml" />
+	<import resource="classpath:spring-configurations/dbpedia-spotlight.xml" />
+	<import resource="classpath:spring-configurations/freme-ner.xml" />
+</beans>
+

@@ -1,0 +1,1 @@
+START_ARGS="-Djava.security.egd=file:/dev/./urandom -Xmx2G"
