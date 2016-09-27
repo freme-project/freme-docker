@@ -17,6 +17,7 @@
 	<import resource="classpath:spring-configurations/pipelines.xml" />
 	<import resource="classpath:spring-configurations/postprocessing.xml" />
 	<import resource="classpath:spring-configurations/cors-filter.xml" />
+	<import resource="classpath:spring-configurations/proxy-filter.xml" />
 	<import resource="classpath:spring-configurations/nif-converter.xml" />
 	<import resource="classpath:spring-configurations/urlsupport-filter.xml"/>
 	<import resource="classpath:spring-configurations/xslt-converter.xml"/>
