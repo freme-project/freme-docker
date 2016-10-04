@@ -9,6 +9,9 @@ services:
      - freme-mysql
      - freme-virtuoso
      - freme-solr
+    volumes:
+     - ./logs:/logs
+
 
   freme-mysql:
     image: fremeproject/freme-mysql
