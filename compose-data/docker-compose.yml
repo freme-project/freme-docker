@@ -10,17 +10,19 @@ services:
      - freme-virtuoso
      - freme-solr
     volumes:
-     - ./logs:/logs
+     - /opt/freme-data/logs:/logs
     environment:
       - ADMIN_PASSWORD=123
+    restart: always
 
 
   freme-mysql:
-    image: fremeproject/freme-mysql
+    image: fremeproject/freme-mysql-data
     environment:
       - MYSQL_ROOT_PASSWORD=root
     ports:
       - "40001:3306"
+    restart: always
 
   freme-virtuoso:
     image: tenforce/virtuoso
@@ -28,8 +30,13 @@ services:
       - DBA_PASSWORD=dba
       - SPARQL_UPDATE=true
       - DEFAULT_GRAPH=http://www.example.com/my-graph
+    restart: always
   
   freme-solr:
     image: fremeproject/freme-solr
+    ports:
+      - "4003:8983"
+    volumes:
+     - /opt/freme-data/solr/elinker/:/opt/solr/server/solr/elinker
+    restart: always
 
-restart: always
