@@ -1,4 +1,5 @@
 version: '2'
+
 services:
 
   freme-broker:
@@ -11,8 +12,6 @@ services:
      - freme-solr
     volumes:
      - /opt/freme-data/logs:/logs
-#    environment:
- #     - ADMIN_PASSWORD=abc
     env_file:
      - config.env
 
@@ -20,9 +19,7 @@ services:
 
 
   freme-mysql:
-    image: fremeproject/freme-mysql-data
-#    environment:
- #     - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    image: "fremeproject/freme-mysql-${FREME_DISTRIBUTION}"
     env_file:
       - config.env
     restart: always
@@ -35,9 +32,13 @@ services:
       - SPARQL_UPDATE=true
       - DEFAULT_GRAPH=http://www.example.com/my-graph
     restart: always
-  
+    volumes:
+      - /opt/freme-data/solr/elinker/virtuoso:/data 
+
   freme-solr:
     image: fremeproject/freme-solr
+    ports:
+      - "4001:8890" 
     volumes:
      - /opt/freme-data/solr/elinker/:/opt/solr/server/solr/elinker
     restart: always
