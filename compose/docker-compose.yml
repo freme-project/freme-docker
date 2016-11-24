@@ -38,7 +38,7 @@ services:
   freme-solr:
     image: fremeproject/freme-solr
     ports:
-      - "4001:8890" 
+      - "4001:8893" 
     volumes:
      - /opt/freme-data/solr/elinker/:/opt/solr/server/solr/elinker
     restart: always
